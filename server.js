@@ -28,6 +28,10 @@ app.get('/', (req, res) => {
     res.send("Server is working",)
 })
 
+//Get coupon code                   ->Get
+//update coupon status to used      ->Put
+//Add new highscore to top          ->Post
+
 app.post('/register', register.handleRegister(database, bcrypt));
 
 app.post('/signin', signin.handleSignin(database, bcrypt));
